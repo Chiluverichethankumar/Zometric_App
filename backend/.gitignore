@@ -19,6 +19,7 @@ db.sqlite3
 
 # Local secrets and environment variables
 backend/.env
+.env
 # Local settings (if you have one)
 local_settings.py
 
