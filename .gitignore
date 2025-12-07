@@ -1,80 +1,111 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Created by venv; see https://docs.python.org/3/library/venv.html
+*
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
 
-# IDE and editors
-.idea/
+# Django
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+
+# Django secret keys
+.DS_Store
+config/settings/local.py
+config/settings/production.py
+
+# Virtualenv
+pip-log.txt
+pip-delete-this-directory.txt
+
+# IDE
 .vscode/
+.idea/
+*.swp
+*.swo
+*~
 
-# Dependencies
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Supabase / Production
+.env.production
+.env.staging
+
+# Node modules (if React Native frontend)
 node_modules/
-/node_modules
-/.pnp
-.pnp.js
-.yarn/install-state.gz
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/versions
-
-# Testing
-/coverage
-
-# Next.js
-/.next/
-/out/
-next-env.d.ts
-*.tsbuildinfo
-
-# Production builds
-/build
-dist/
-dist
-
-# Environment files (comprehensive coverage)
-
-*token.json*
-*credentials.json*
-
-# Logs and debug files
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-.pnpm-debug.log*
-dump.rdb
 
-# System files
+# Django migrations (optional - recreate locally)
+**/migrations/
+!**/migrations/__init__.py
+
+# Testing
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Build directories
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+*.backup
+
+# Mac
 .DS_Store
-*.pem
+.AppleDouble
+.LSOverride
 
-# Python
-__pycache__/
-*pyc*
-venv/
-.venv/
+# Thumbnails
+._*
 
-# Development tools
-chainlit.md
-.chainlit
-.ipynb_checkpoints/
-.ac
-
-# Deployment
-.vercel
-
-# Data and databases
-agenthub/agents/youtube/db
-
-# Archive files and large assets
-**/*.zip
-**/*.tar.gz
-**/*.tar
-**/*.tgz
-*.pack
-*.deb
-*.dylib
-
-# Build caches
-.cache/
-
-# Mobile development
-android-sdk/ 
+# Files that may appear in the root of submodules
+.gitmodules
