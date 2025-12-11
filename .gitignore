@@ -1,0 +1,109 @@
+# =====================================
+# GLOBAL OS FILES
+# =====================================
+.DS_Store
+Thumbs.db
+*.log
+*~
+
+# =====================================
+# PYTHON / DJANGO PROJECTS
+# =====================================
+
+# --- Virtual environments ---
+backend/venv/
+backend/.venv/
+backend/env/
+
+backend_testing/venv/
+backend_testing/.venv/
+backend_testing/env/
+
+# --- Python cache ---
+backend/__pycache__/
+backend/**/*.pyc
+backend_testing/__pycache__/
+backend_testing/**/*.pyc
+
+# --- Django settings/secrets ---
+backend/.env
+backend_testing/.env
+
+backend/db.sqlite3
+backend_testing/db.sqlite3
+
+backend/local_settings.py
+backend_testing/local_settings.py
+
+# --- Django uploads/media ---
+backend/media/
+backend_testing/media/
+
+# --- Django migrations (optional) ---
+*/migrations/__pycache__/
+*/migrations/*.py
+!*/migrations/__init__.py
+
+# =====================================
+# REACT NATIVE (Zometric app)
+# =====================================
+
+# --- Node.js ---
+Zometric/node_modules/
+Zometric/npm-debug.log
+Zometric/yarn-error.log
+
+# --- Metro bundler temp files ---
+Zometric/.metro-health-check*
+
+# --- JS bundle ---
+Zometric/*.jsbundle
+
+# --- Android ---
+Zometric/android/build/
+Zometric/android/app/build/
+Zometric/android/.gradle/
+Zometric/android/local.properties
+Zometric/android/*.iml
+Zometric/android/.cxx/
+Zometric/android/*.keystore
+!Zometric/android/debug.keystore
+
+# --- iOS / Xcode ---
+Zometric/ios/build/
+Zometric/ios/Pods/
+Zometric/ios/DerivedData/
+Zometric/ios/*.xcworkspace/xcuserdata
+Zometric/ios/*.xcuserstate
+Zometric/ios/*.pbxuser
+Zometric/ios/*.mode1v3
+Zometric/ios/*.mode2v3
+Zometric/ios/*.perspectivev3
+Zometric/ios/.xcode.env.local
+
+# --- Ruby/CocoaPods ---
+Zometric/vendor/bundle/
+
+# --- fastlane ---
+Zometric/**/fastlane/report.xml
+Zometric/**/fastlane/Preview.html
+Zometric/**/fastlane/screenshots
+Zometric/**/fastlane/test_output
+
+# --- Yarn ---
+Zometric/.yarn/*
+!Zometric/.yarn/patches
+!Zometric/.yarn/plugins
+!Zometric/.yarn/releases
+!Zometric/.yarn/sdks
+!Zometric/.yarn/versions
+
+# --- Test coverage ---
+Zometric/coverage/
+
+# =====================================
+# VS CODE / IDE
+# =====================================
+.vscode/
+.idea/
+*.iml
