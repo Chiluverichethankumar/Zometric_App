@@ -1,0 +1,16 @@
+# Ignore Android build directories
+android/app/.cxx/
+android/app/build/
+android/.gradle/
+android/build/
+
+# Ignore iOS build dirs
+ios/Pods/
+ios/build/
+ios/DerivedData/
+
+# Ignore node_modules
+node_modules/
+
+# Misc
+*.keystore
